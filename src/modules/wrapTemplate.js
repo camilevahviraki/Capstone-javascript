@@ -1,8 +1,7 @@
 import logo from '../icons/kindpng_1495172.png';
 
 const wrapTemplate = () => {
-    document.body.innerHTML = 
-`
+  document.body.innerHTML = `
 <header>
 <nav>
     <img src="${logo}" alt="" id="logo">
@@ -15,7 +14,8 @@ const wrapTemplate = () => {
 </header>
 <main id="main">
 </main>
-`
-}
+
+`;
+};
 
 export default wrapTemplate;
