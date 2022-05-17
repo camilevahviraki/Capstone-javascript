@@ -53,3 +53,22 @@ nav button:hover {
   top: 0;
   height: 50px;
 }
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer hr {
+  background-color: rgb(226, 226, 226);
+  height: 1px;
+  border: 0;
+}
+
+footer p,
+a {
+  text-decoration: none;
+  color: rgb(83, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
