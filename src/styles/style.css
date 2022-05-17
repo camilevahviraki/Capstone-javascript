@@ -64,6 +64,7 @@ main {
   width: 80%;
   column-gap: 7%;
   row-gap: 30px;
+  margin-top: 80px;
 }
 
 .movie {
