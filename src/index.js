@@ -23,18 +23,15 @@ const createId = async () => {
     }
   );
 
-  const data = await postLike.json()
+  const data = await postLike.text()
 
   console.log(data);
 
-  // ((value) => value.json())
-  //  .then((data) => console.log(data))
-  //  .catch((error) => console.log(error))
+
 }
 
-// createId();
+createId();
 
-document.addEventListener('load', createId);
 
 // $.post("https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jRx0N2j3LDDHlga0WoEO/likes/",
 //  {"item_id": "movie1"}, 
