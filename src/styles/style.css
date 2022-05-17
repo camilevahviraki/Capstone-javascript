@@ -42,13 +42,6 @@ nav button {
   text-transform: uppercase;
 }
 
-nav button:hover {
-  background-color: rgb(243, 243, 243);
-  color: rgb(95, 1, 1);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .buttonsNav {
   display: flex;
   align-items: center;
@@ -87,6 +80,14 @@ main {
   color: rgb(255, 255, 255);
 }
 
+footer p,
+a {
+  text-decoration: none;
+  color: rgb(83, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
 .movie a {
   text-decoration: none;
   font-family: poppins, sans-serif;
@@ -113,12 +114,6 @@ main {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 7px;
-}
-
-.title-like p {
-  position: absolute;
-  right: 20px;
-  margin-top: 24px;
 }
 
 #orange {
@@ -148,10 +143,15 @@ footer hr {
   border: 0;
 }
 
-footer p,
-a {
-  text-decoration: none;
-  color: rgb(83, 0, 0);
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+nav button:hover {
+  background-color: rgb(243, 243, 243);
+  color: rgb(95, 1, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.title-like p {
+  position: absolute;
+  right: 20px;
+  margin-top: 24px;
 }
