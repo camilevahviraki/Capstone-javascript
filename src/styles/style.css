@@ -136,3 +136,22 @@ main {
 #undefined {
   background: linear-gradient(135deg, rgba(38, 38, 38, 0) 0.81%, rgba(158, 32, 148, 0.726) 100.03%);
 }
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer hr {
+  background-color: rgb(226, 226, 226);
+  height: 1px;
+  border: 0;
+}
+
+footer p,
+a {
+  text-decoration: none;
+  color: rgb(83, 0, 0);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}

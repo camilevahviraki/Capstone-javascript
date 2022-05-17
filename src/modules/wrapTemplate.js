@@ -14,6 +14,13 @@ const wrapTemplate = () => {
 </header>
 <main id="main">
 </main>
+<<<<<<< HEAD
+=======
+<footer>
+<hr>
+<p>Created by <a href="https://github.com/benshidanny11">@Daniel<a/> & <a href="https://github.com/camilevahviraki">Camile<a/></p>
+</footer>
+>>>>>>> acfff5aa6b788f0422ba6382a54c5943f6c59c08
 `;
 };
 
