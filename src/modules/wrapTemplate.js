@@ -14,7 +14,6 @@ const wrapTemplate = () => {
 </header>
 <main id="main">
 </main>
-
 `;
 };
 
