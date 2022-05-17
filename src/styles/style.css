@@ -21,20 +21,28 @@ nav {
   width: 100vw;
   position: relative;
   height: 60px;
-  background: linear-gradient(135deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%);
-
-  /* background-color: rgba(3, 10, 15, 0.055); */
+  background: linear-gradient(135deg, rgba(104, 49, 49, 0.192) 0.81%, rgba(66, 10, 10, 0.9) 84.03%);
+  box-shadow: 0 8px 2px -2px rgba(211, 211, 211, 0.418);
 }
 
 nav button {
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   font-family: poppins, sans-serif;
-  font-weight: 600;
+  font-style: italic;
+  font-weight: 400;
   background-color: transparent;
   margin-left: 40px;
   float: right;
-  color: rgb(51, 204, 184);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+nav button:hover {
+  background-color: rgb(243, 243, 243);
+  color: rgb(95, 1, 1);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .buttonsNav {
