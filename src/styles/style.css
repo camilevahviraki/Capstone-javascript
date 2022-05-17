@@ -42,13 +42,6 @@ nav button {
   text-transform: uppercase;
 }
 
-nav button:hover {
-  background-color: rgb(243, 243, 243);
-  color: rgb(95, 1, 1);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .buttonsNav {
   display: flex;
   align-items: center;
@@ -134,4 +127,11 @@ main {
 
 #undefined {
   background: linear-gradient(135deg, rgba(38, 38, 38, 0) 0.81%, rgba(158, 32, 148, 0.726) 100.03%);
+}
+
+nav button:hover {
+  background-color: rgb(243, 243, 243);
+  color: rgb(95, 1, 1);
+  border-radius: 5px;
+  cursor: pointer;
 }
