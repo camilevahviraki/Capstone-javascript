@@ -83,7 +83,7 @@ main {
 footer p,
 a {
   text-decoration: none;
-  color: rgb(83, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
@@ -99,6 +99,11 @@ a {
 .title-like {
   width: fit-content;
   margin-bottom: 26px;
+  color: white;
+}
+
+.movie p {
+  color: aliceblue;
 }
 
 .like {
@@ -114,6 +119,7 @@ a {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 7px;
+  color: white;
 }
 
 #orange {
