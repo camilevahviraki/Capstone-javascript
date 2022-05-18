@@ -1,9 +1,9 @@
 import { result } from 'lodash';
 import like from '../icons/kindpng_like.png';
-import likeFeature from './likeMovie';
+import LikeFeature from './likeMovie';
 import addLike from './addLikes';
 
-const likeFunction = new likeFeature();
+const likeFunction = new LikeFeature();
 const a = likeFunction.likesList();
 
 const displayMovies = async (arrMovies) => {

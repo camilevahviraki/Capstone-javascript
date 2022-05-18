@@ -1,11 +1,13 @@
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jRx0N2j3LDDHlga0WoEO';
 let arrList = [];
 
-class likeFeature {
-  constructor () {
+class LikeFeature {
+  constructor() {
     this.arrayLikes = [];
   }
+
   async likeMovie(movieName) {
+    this.arrayLikes = [];
     try {
       const postLike = await fetch(`${url}/likes/`,
         {
@@ -23,14 +25,13 @@ class likeFeature {
   }
 
   async likesList() {
-    
     const fetchLikes = await fetch(`${url}/likes/`)
       .then((response) => response.json()).then((response) => {
         arrList = response;
         return arrList;
       });
     this.arrayLikes = arrList;
-    
+
     return arrList;
   }
 
@@ -39,4 +40,4 @@ class likeFeature {
   }
 }
 
-export default likeFeature;
+export default LikeFeature;

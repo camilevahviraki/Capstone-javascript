@@ -11,8 +11,6 @@ const fetchMovies = async () => {
       displayMovies(arr);
     })
     .catch((err) => console.error(err));
-  await addLike();
-
 };
 
 export default fetchMovies;

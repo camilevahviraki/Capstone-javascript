@@ -1,6 +1,6 @@
-import likeFeature from './likeMovie';
+import LikeFeature from './likeMovie';
 
-const likeFunctions = new likeFeature();
+const likeFunctions = new LikeFeature();
 
 const addLike = () => {
   const likeBtn = document.querySelectorAll('.like');
@@ -14,9 +14,8 @@ const addLike = () => {
       abc = parseInt(likeNum.innerText);
       abc += 1;
       abcd += 1;
-      const zed = abcd - 1;
-      likeNum.innerText = abc - zed;
-      console.log('likeNum', zed);
+      likeNum.innerText = (abc - abcd) + 1;
+      console.log('likeNum', likeNum.innerText);
     });
   });
 };
