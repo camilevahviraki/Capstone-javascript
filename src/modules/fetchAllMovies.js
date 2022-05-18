@@ -1,4 +1,5 @@
 import displayMovies from './displayMovies';
+import addLike from './addLikes';
 
 let arr = [];
 const fetchMovies = async () => {
@@ -10,6 +11,8 @@ const fetchMovies = async () => {
       displayMovies(arr);
     })
     .catch((err) => console.error(err));
+  await addLike();
+
 };
 
 export default fetchMovies;
