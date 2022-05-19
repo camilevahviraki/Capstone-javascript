@@ -43,7 +43,8 @@ nav button {
   text-transform: uppercase;
 }
 
-.m-btn-container button {
+.m-btn-container button,
+.btn-primary {
   padding: 0.3rem 0.6rem;
   font-family: poppins, sans-serif;
   font-weight: 500;
@@ -97,18 +98,49 @@ main {
   padding: 0.6rem 0.2rem;
 }
 
+.btn-primary:hover {
+  background-color: rgb(87, 5, 5);
+  color: rgba(255, 255, 255, 0.747);
+  transition: 1s;
+}
+
 .m-btn-container button:hover {
   background-color: rgb(87, 5, 5);
   color: rgba(255, 255, 255, 0.747);
   transition: 1s;
 }
 
-footer p,
+.comment-content {
+  margin-left: 0.8rem;
+}
+
+.comment-content p,
+.mv-details {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 12;
+  color: #383838b0;
+  font-weight: lighter;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.ls-item,
+.mv-details {
+  list-style-type: none;
+  padding: 0.6rem;
+}
+
+.footerp,
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  padding: 0;
 }
 
 .movie a {
@@ -160,20 +192,39 @@ a {
 }
 
 #imgmoviedetails {
-  width: 30%;
+  width: 35%;
   height: auto;
 }
 
-#mv-description {
-  height: 100%;
+.mv-details-container {
+  height: 500px;
   overflow: auto;
 }
 
-#mv-description p {
+#mv-description {
+  padding: 1rem;
+}
+
+.p-description p {
   font-size: 12;
   color: #696969b0;
-  padding: 1rem;
   font-weight: lighter;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(83, 0, 0);
+  color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-avatar > h4 {
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
 }
 
 .like {
@@ -217,4 +268,8 @@ footer hr {
   background-color: rgb(226, 226, 226);
   height: 1px;
   border: 0;
+}
+
+.form-control:focus {
+  outline: none !important;
 }

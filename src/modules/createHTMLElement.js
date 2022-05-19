@@ -5,7 +5,6 @@ class HTMLElementCreator {
     this.children = [];
     this.elementText = null;
     this.element = null;
-    this.eventListener = null;
   }
 
   addAttributes(atribute) {
@@ -18,7 +17,7 @@ class HTMLElementCreator {
     return this;
   }
 
-  addChildren(...children) {
+  addChildren(children) {
     this.children = children;
     return this;
   }
@@ -28,10 +27,10 @@ class HTMLElementCreator {
     return this;
   }
 
-  addEvent(event) {
-    this.eventListener = event;
-    return this;
-  }
+  // addEvent(event) {
+  //   this.eventListener = event;
+  //   return this;
+  // }
 
   addElement(ele) {
     this.element = ele;
@@ -40,11 +39,10 @@ class HTMLElementCreator {
 
   create() {
     const el = document.createElement(this.element);
-    el.classList.add(...this.classes);
-    Object.keys(this.attributes).forEach((key) => el.setAttribute(key, this.attributes[key]));
-    if (this.eventListener) {
-      el.addEventListener('click', this.eventListener);
+    if (this.classes.length > 0) {
+      el.classList.add(...this.classes);
     }
+    Object.keys(this.attributes).forEach((key) => el.setAttribute(key, this.attributes[key]));
     if (this.children) {
       this.children.forEach((element) => {
         el.appendChild(element);

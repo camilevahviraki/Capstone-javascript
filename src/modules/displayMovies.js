@@ -38,10 +38,9 @@ const displayMovies = async (arrMovies) => {
       </div>`)
       .addElement('div')
       .addAttributes({ id: assingnId() })
-      .addClasses('movie')
-      .addEvent(() => showMovieDetails(element))
       .create();
-
+    movieItem.classList.add('movie');
+    movieItem.addEventListener('click', () => showMovieDetails(element));
     MainContainer.appendChild(movieItem);
   });
 };
