@@ -9,11 +9,12 @@ import fetchComments from './fetchComments';
 import countComments from './countComments';
 
 const likeFunction = new LikeFeature();
-
 const displayMovies = async (arrMovies) => {
   const fetchedLikes = await likeFunction.likesList();
   const MainContainer = document.getElementById('main');
+  const AllMoviesPTag = document.getElementById('numberMovies');
   arrMovies.slice(0, 20).forEach(async (element, i) => {
+    AllMoviesPTag.innerText = `[${i + 1}] Movies`;
     const imgLink = element.image.medium;
     const assingnId = () => {
       if (i % 2 === 0) {
