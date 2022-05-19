@@ -11,11 +11,11 @@ const addLike = () => {
       const titleMovie = document.getElementById(`titleMovie${i}`).textContent;
       const likeNum = document.getElementById(`likesNum${i}`);
       likeFunctions.likeMovie(titleMovie);
-      abc = parseInt(likeNum.innerText);
+      abc = parseInt(likeNum.innerText, 10);
       abc += 1;
       abcd += 1;
       likeNum.innerText = (abc - abcd) + 1;
-      console.log('likeNum', likeNum.innerText);
+      abcd = 1;
     });
   });
 };
