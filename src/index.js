@@ -3,10 +3,17 @@ import { result } from 'lodash';
 import $ from 'jquery';
 import wrapTemplate from './modules/wrapTemplate';
 import fetchMovies from './modules/fetchAllMovies';
-import likeMovie from './modules/likeMovie';
+import addLike from './modules/addLikes';
 
-wrapTemplate();
+const wrapFunctions = async () => {
+  await wrapTemplate();
 
-fetchMovies();
+  await fetchMovies();
+};
 
-likeMovie();
+wrapFunctions();
+
+const titleMovie = document.getElementById('main');
+titleMovie.addEventListener('click', () => {
+  addLike();
+});
