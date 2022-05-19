@@ -8,8 +8,6 @@ const likeMovie = async () => {
       });
 
     const data = await postLike.text();
-
-    console.log(data);
   } catch (e) {
     console.log(e);
   }
