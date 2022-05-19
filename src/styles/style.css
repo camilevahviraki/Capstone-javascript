@@ -1,3 +1,4 @@
+/* stylelint-disable csstree/validator */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
@@ -42,6 +43,26 @@ nav button {
   text-transform: uppercase;
 }
 
+.m-btn-container button,
+.btn-primary {
+  padding: 0.3rem 0.6rem;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 5px 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.747);
+  color: rgb(87, 5, 5);
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background-color: rgb(243, 243, 243);
+  color: rgb(95, 1, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .buttonsNav {
   display: flex;
   align-items: center;
@@ -53,39 +74,73 @@ nav button {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80%;
-  column-gap: 7%;
+  column-gap: 2%;
   row-gap: 30px;
   margin-top: 80px;
 }
 
 .movie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
   background-color: orange;
   border-radius: 20px;
 }
 
-.movie button {
-  padding: 10px;
-  font-family: poppins, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  margin: 5px 0;
-  border: none;
-  background-color: rgb(99, 98, 98);
-  color: rgb(255, 255, 255);
+.movie:hover {
+  box-shadow: 0 0 15px #8b8b8b8c;
+  opacity: 0.8;
 }
 
-footer p,
+.m-btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.2rem;
+}
+
+.btn-primary:hover {
+  background-color: rgb(87, 5, 5);
+  color: rgba(255, 255, 255, 0.747);
+  transition: 1s;
+}
+
+.m-btn-container button:hover {
+  background-color: rgb(87, 5, 5);
+  color: rgba(255, 255, 255, 0.747);
+  transition: 1s;
+}
+
+.comment-content {
+  margin-left: 0.8rem;
+}
+
+.comment-content p,
+.mv-details {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 12;
+  color: #383838b0;
+  font-weight: lighter;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.ls-item,
+.mv-details {
+  list-style-type: none;
+  padding: 0.6rem;
+}
+
+.footerp,
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  padding: 0;
 }
 
 .movie a {
@@ -97,21 +152,95 @@ a {
 }
 
 .title-like {
-  width: fit-content;
-  margin-bottom: 26px;
-  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
 }
 
-.movie p {
-  color: aliceblue;
+.like-wrapper {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  float: left;
+}
+
+.title-like p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.title-like,
+.movie p,
+.movie h3 {
+  color: #dadada;
+}
+
+.movie-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+}
+
+.movie-content h2 {
+  color: rgb(255, 255, 255);
+}
+
+.imgMovie {
+  width: 100%;
+  height: auto;
+}
+
+.modal-body {
+  padding: 0;
+  display: flex;
+}
+
+#imgmoviedetails {
+  width: 35%;
+  height: auto;
+}
+
+.mv-details-container {
+  height: 500px;
+  overflow: auto;
+}
+
+#mv-description {
+  padding: 1rem;
+}
+
+.p-description p {
+  font-size: 12;
+  color: #696969b0;
+  font-weight: lighter;
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(83, 0, 0);
+  color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-avatar > h4 {
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
 }
 
 .like {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 20px;
-  filter: brightness(0) invert(1);
+  line-height: inherit !important;
+  font-size: 16px;
+}
+
+.like:hover {
+  color: rgb(83, 0, 0);
+  transition: 1s;
+  cursor: pointer;
 }
 
 .movie h2 {
@@ -123,7 +252,7 @@ a {
 }
 
 #orange {
-  background: linear-gradient(135deg, rgba(90, 90, 90, 0.295) 0.81%, rgba(255, 166, 0, 0.733) 100.03%);
+  background: linear-gradient(135deg, rgba(90, 90, 90, 0.295) 0.81%, rgba(243, 159, 2, 0.733) 100.03%);
 }
 
 #blue {
@@ -149,15 +278,6 @@ footer hr {
   border: 0;
 }
 
-nav button:hover {
-  background-color: rgb(243, 243, 243);
-  color: rgb(95, 1, 1);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.title-like p {
-  position: absolute;
-  right: 20px;
-  margin-top: 24px;
+.form-control:focus {
+  outline: none !important;
 }
