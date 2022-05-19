@@ -4,13 +4,15 @@ import LikeFeature from './likeMovie';
 import addLike from './addLikes';
 import HTMLElementCreator from './createHTMLElement';
 import showMovieDetails from './showMovieDetails';
+import getMovieLike from './geMovieLike';
+import fetchComments from './fetchComments';
+import countComments from './countComments';
 
 const likeFunction = new LikeFeature();
-const a = likeFunction.likesList();
 
 const displayMovies = async (arrMovies) => {
+  const fetchedLikes = await likeFunction.likesList();
   const MainContainer = document.getElementById('main');
-
   arrMovies.slice(0, 20).forEach(async (element, i) => {
     const imgLink = element.image.medium;
     const assingnId = () => {
@@ -24,17 +26,17 @@ const displayMovies = async (arrMovies) => {
       }
       return undefined;
     };
-
+    const comCount = await countComments(element.id);
     const movieItem = HTMLElementCreator
       .addElementText(`<img id="imgMovie${i}" src="${imgLink}" alt="" class="imgMovie" data-bs-toggle="modal" data-bs-target="#exampleModal"/>
       <div class="movie-content">
-      <h2>${element.name}</h2>
+      <h2 id="titleMovie${i}">${element.name}</h2>
       <div class="title-like">
-      <p><i class="fa-solid fa-heart"></i> ${i} likes</p>
+      <div id="btnComment${i}"><i class="fa-solid fa-message"></i> ${comCount || 0} comments</div>
+      <div class="like-wrapper">
+      <i class="fa-solid fa-heart like" id="like${i}"></i>
+      <p id="likesNum${i}">${getMovieLike(fetchedLikes, element.name)} likes</p></div>
       </div>
-      <div class="m-btn-container"> 
-      <button id="btnComment${i}"><i class="fa-solid fa-message"></i> comments</button>
-      <button id="reservation${i}"><i class="fa-solid fa-cart-arrow-down"></i> Add to card</button></div>
       </div>`)
       .addElement('div')
       .addAttributes({ id: assingnId() })

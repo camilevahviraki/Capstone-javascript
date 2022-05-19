@@ -14,7 +14,7 @@ const addLike = () => {
       abc = parseInt(likeNum.innerText, 10);
       abc += 1;
       abcd += 1;
-      likeNum.innerText = (abc - abcd) + 1;
+      likeNum.innerText = `${(abc - abcd) + 1} likes`;
       abcd = 1;
     });
   });

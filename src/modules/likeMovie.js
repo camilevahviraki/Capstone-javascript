@@ -1,5 +1,6 @@
+/* eslint-disable class-methods-use-this */
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jRx0N2j3LDDHlga0WoEO';
-let arrList = [];
+const arrList = [];
 
 class LikeFeature {
   constructor() {
@@ -25,14 +26,15 @@ class LikeFeature {
   }
 
   async likesList() {
-    const fetchLikes = await fetch(`${url}/likes/`)
-      .then((response) => response.json()).then((response) => {
-        arrList = response;
-        return arrList;
-      });
-    this.arrayLikes = arrList;
+    let likesList = [];
+    try {
+      const fetchLikes = await fetch(`${url}/likes/`);
+      likesList = await fetchLikes.json();
+    } catch (e) {
+      console.log(e);
+    }
 
-    return arrList;
+    return likesList;
   }
 
   arrListW() {
