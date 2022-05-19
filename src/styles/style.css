@@ -134,4 +134,5 @@ nav button:hover {
   color: rgb(95, 1, 1);
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 600;
 }
