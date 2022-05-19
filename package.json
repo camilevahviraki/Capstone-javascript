@@ -1,23 +1,23 @@
 {
-  "name": "to-do-list-app",
+  "name": "javascript Capstone",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camilevahviraki/To-do-list-app.git"
+    "url": "git+https://github.com/camilevahviraki/Capstone-javascript.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/camilevahviraki/To-do-list-app/issues"
+    "url": "https://github.com/camilevahviraki/Capstone-javascript/issues"
   },
   "jest": {
     "resetMocks": false,
@@ -25,7 +25,7 @@
       "jest-localstorage-mock"
     ]
   },
-  "homepage": "https://github.com/camilevahviraki/To-do-list-app#readme",
+  "homepage": "https://github.com/camilevahviraki/Capstone-javascript#readme",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
