@@ -1,5 +1,3 @@
-import { result } from 'lodash';
-import like from '../icons/kindpng_like.png';
 import LikeFeature from './likeMovie';
 import addLike from './addLikes';
 import HTMLElementCreator from './createHTMLElement';
