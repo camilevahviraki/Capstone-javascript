@@ -11,6 +11,7 @@ const wrapTemplate = () => {
       <button id="type-page">Genres</button> 
     </div>    
 </nav>
+<h3 id="numberMovies"></h3>
 </header>
 <main id="main">
 </main>

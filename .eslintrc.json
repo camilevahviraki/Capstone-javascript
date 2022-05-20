@@ -11,6 +11,7 @@
     },
     "extends": ["airbnb-base"],
     "rules": {
+        "import/no-unresolved": "warn",
         "no-unused-vars": "warn",
         "no-inner-declarations": "off",
         "no-restricted-globals": "warn",
