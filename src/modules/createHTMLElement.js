@@ -27,11 +27,6 @@ class HTMLElementCreator {
     return this;
   }
 
-  // addEvent(event) {
-  //   this.eventListener = event;
-  //   return this;
-  // }
-
   addElement(ele) {
     this.element = ele;
     return this;

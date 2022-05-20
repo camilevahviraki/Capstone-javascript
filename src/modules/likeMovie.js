@@ -1,6 +1,5 @@
 /* eslint-disable class-methods-use-this */
 const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/jRx0N2j3LDDHlga0WoEO';
-const arrList = [];
 
 class LikeFeature {
   constructor() {
@@ -16,12 +15,9 @@ class LikeFeature {
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ item_id: `${movieName}` }),
         });
-
-      const data = await postLike.text();
-
-      console.log(data);
+      return await postLike.text();
     } catch (e) {
-      console.log(e);
+      return [];
     }
   }
 
@@ -30,11 +26,10 @@ class LikeFeature {
     try {
       const fetchLikes = await fetch(`${url}/likes/`);
       likesList = await fetchLikes.json();
+      return likesList;
     } catch (e) {
-      console.log(e);
+      return [];
     }
-
-    return likesList;
   }
 
   arrListW() {

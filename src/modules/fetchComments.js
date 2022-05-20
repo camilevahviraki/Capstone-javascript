@@ -5,10 +5,10 @@ const fetchComments = async (itemid) => {
   try {
     const fetchedData = await fetch(`${url}${itemid}`);
     comments = await fetchedData.json();
+    return comments;
   } catch (e) {
-    console.log(e);
+    return [];
   }
-  return comments;
 };
 
 export default fetchComments;

@@ -1,7 +1,7 @@
 /* eslint-disable import/no-cycle */
-import fetchComments from './fetchComments';
-import populateComments from './populateComments';
-import wrapForm from './wrapFrom';
+import fetchComments from './fetchComments.js';
+import populateComments from './populateComments.js';
+import wrapForm from './wrapFrom.js';
 
 const showMovieDetails = async (movie) => {
   document.getElementById('moviename').innerHTML = movie.name;

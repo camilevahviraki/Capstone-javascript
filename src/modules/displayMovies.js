@@ -1,10 +1,8 @@
-import LikeFeature from './likeMovie';
-import addLike from './addLikes';
-import HTMLElementCreator from './createHTMLElement';
-import showMovieDetails from './showMovieDetails';
-import getMovieLike from './geMovieLike';
-import fetchComments from './fetchComments';
-import countComments from './countComments';
+import LikeFeature from './likeMovie.js';
+import HTMLElementCreator from './createHTMLElement.js';
+import showMovieDetails from './showMovieDetails.js';
+import getMovieLike from './geMovieLike.js';
+import countComments from './countComments.js';
 
 const likeFunction = new LikeFeature();
 const displayMovies = async (arrMovies) => {
