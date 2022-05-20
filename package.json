@@ -1,23 +1,23 @@
 {
-  "name": "javascript Capstone",
+  "name": "to-do-list-app",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "start": "webpack serve --open",
     "build": "webpack",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camilevahviraki/Capstone-javascript.git"
+    "url": "git+https://github.com/camilevahviraki/To-do-list-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/camilevahviraki/Capstone-javascript/issues"
+    "url": "https://github.com/camilevahviraki/To-do-list-app/issues"
   },
   "jest": {
     "resetMocks": false,
@@ -25,12 +25,13 @@
       "jest-localstorage-mock"
     ]
   },
-  "homepage": "https://github.com/camilevahviraki/Capstone-javascript#readme",
+  "homepage": "https://github.com/camilevahviraki/To-do-list-app#readme",
   "dependencies": {
     "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "jsdom": "^19.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.14"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
@@ -44,7 +45,6 @@
     "jest": "^28.0.3",
     "jest-localstorage-mock": "^2.4.21",
     "mock-local-storage": "^1.1.22",
-    "postcss": "^8.1.0",
     "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",

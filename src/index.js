@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import './styles/style.css';
 import wrapTemplate from './modules/wrapTemplate';
 import fetchMovies from './modules/fetchAllMovies';
