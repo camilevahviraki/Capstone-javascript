@@ -8,9 +8,8 @@ const countComments = async (itemid) => {
     count = comments.length;
     return count;
   } catch (e) {
-    console.log(e);
+    return 0;
   }
-  return count;
 };
 
 export default countComments;

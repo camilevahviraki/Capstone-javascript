@@ -1,4 +1,4 @@
-import displayMovies from '../_mocks_/displayMovies.js';
+import displayMovies from '../../_mocks_/displayMovies.js';
 
 const array1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
 const array2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm'];

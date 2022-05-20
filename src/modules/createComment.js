@@ -9,8 +9,9 @@ const createComment = async (item_id) => {
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({ item_id, username, comment }),
       });
+    return 'Created';
   } catch (e) {
-    console.log(e.message);
+    return 'Error';
   }
 };
 

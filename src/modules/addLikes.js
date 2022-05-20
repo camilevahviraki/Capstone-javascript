@@ -1,4 +1,4 @@
-import LikeFeature from './likeMovie';
+import LikeFeature from './likeMovie.js';
 
 const likeFunctions = new LikeFeature();
 
