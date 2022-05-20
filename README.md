@@ -17,6 +17,10 @@
 
 Type [type this link](https://camilevahviraki.github.io/Capstone-javascript/) to see the live demo
 
+## Video link
+
+Take a look on our [video of explaining](https://drive.google.com/file/d/1ivLEV4ah0aQQGOkLanM2d7MiiDBcuyp-/view) the project
+
 
  ## Getting Started
 
