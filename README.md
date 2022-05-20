@@ -13,6 +13,9 @@
 - Js
 - webpack
 
+## Live link
+
+Type [type this link](https://camilevahviraki.github.io/Capstone-javascript/) to see the live demo
 
 
  ## Getting Started
@@ -32,9 +35,19 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
+  #### Camile Vahviraki
+
 - GitHub: [@camilevahviraki](https://github.com/camilevahviraki)
 - Twitter: [@camilevahviraki](https://twitter.com/CamileVahviraki)
 - LinkedIn: [camilevahviraki](https://www.linkedin.com/in/camile-vahviraki-8180a6232/)
+
+👤 **Author2**
+
+  #### Daniel Urimubenshi 
+
+- GitHub: [@benshidanny11](https://github.com/benshidanny11)
+- Twitter: [@dbenshi](https://twitter.com/dbenshi)
+- LinkedIn: [danielurimubenshi](https://www.linkedin.com/in/daniel-urimubenshi-077162185/)
 
 
 ## 🤝 Contributing
