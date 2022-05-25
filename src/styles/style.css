@@ -43,6 +43,26 @@ nav button {
   text-transform: uppercase;
 }
 
+.m-btn-container button,
+.btn-primary {
+  padding: 0.3rem 0.6rem;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 5px 0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.747);
+  color: rgb(87, 5, 5);
+  border-radius: 5px;
+}
+
+nav button:hover {
+  background-color: rgb(243, 243, 243);
+  color: rgb(95, 1, 1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .buttonsNav {
   display: flex;
   align-items: center;
@@ -78,16 +98,10 @@ main {
   padding: 0.6rem 0.2rem;
 }
 
-.m-btn-container button {
-  padding: 0.3rem 0.6rem;
-  font-family: poppins, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  margin: 5px 0;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.747);
-  color: rgb(87, 5, 5);
-  border-radius: 5px;
+.btn-primary:hover {
+  background-color: rgb(87, 5, 5);
+  color: rgba(255, 255, 255, 0.747);
+  transition: 1s;
 }
 
 .m-btn-container button:hover {
@@ -96,12 +110,37 @@ main {
   transition: 1s;
 }
 
-footer p,
+.comment-content {
+  margin-left: 0.8rem;
+}
+
+.comment-content p,
+.mv-details {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 12;
+  color: #383838b0;
+  font-weight: lighter;
+}
+
+.comment-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.ls-item,
+.mv-details {
+  list-style-type: none;
+  padding: 0.6rem;
+}
+
+.footerp,
 a {
   text-decoration: none;
-  color: rgb(83, 0, 0);
+  color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  padding: 0;
 }
 
 .movie a {
@@ -114,16 +153,21 @@ a {
 
 .title-like {
   display: flex;
-  padding: 0 1rem;
-  float: right;
+  justify-content: space-around;
   font-size: 12px;
+}
+
+.like-wrapper {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  float: left;
 }
 
 .title-like p {
   margin-block-start: 0;
   margin-block-end: 0;
-  margin-left: auto;
-  margin-right: 0;
 }
 
 .title-like,
@@ -153,28 +197,50 @@ a {
 }
 
 #imgmoviedetails {
-  width: 30%;
+  width: 35%;
   height: auto;
 }
 
-#mv-description {
-  height: 100%;
+.mv-details-container {
+  height: 500px;
   overflow: auto;
 }
 
-#mv-description p {
+#mv-description {
+  padding: 1rem;
+}
+
+.p-description p {
   font-size: 12;
   color: #696969b0;
-  padding: 1rem;
   font-weight: lighter;
 }
 
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(83, 0, 0);
+  color: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-avatar > h4 {
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+}
+
 .like {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  right: 20px;
-  filter: brightness(0) invert(1);
+  line-height: inherit !important;
+  font-size: 16px;
+}
+
+.like:hover {
+  color: rgb(83, 0, 0);
+  transition: 1s;
+  cursor: pointer;
 }
 
 .movie h2 {
@@ -182,6 +248,7 @@ a {
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 7px;
+  color: white;
 }
 
 #orange {
@@ -211,9 +278,38 @@ footer hr {
   border: 0;
 }
 
-nav button:hover {
-  background-color: rgb(243, 243, 243);
-  color: rgb(95, 1, 1);
-  border-radius: 5px;
-  cursor: pointer;
+.form-control:focus {
+  outline: none !important;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    column-gap: 2%;
+    row-gap: 20px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    column-gap: 2%;
+    row-gap: 20px;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    row-gap: 20px;
+    margin-top: 40px;
+  }
 }

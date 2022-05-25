@@ -2,9 +2,9 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Movies Wrapper
+# Movies finder
 
-> This is my personnal App demo, feel free to check it out.
+![](./src/icons/Movies-samples.png)
 
 
 ## Built With

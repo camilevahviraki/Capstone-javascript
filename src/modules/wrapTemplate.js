@@ -14,7 +14,7 @@ const wrapTemplate = () => {
 </header>
 <main id="main">
 </main>
-<footer>
+<footer class="footer">
 <hr>
 <p>Created by <a href="https://github.com/benshidanny11">@Daniel<a/> & <a href="https://github.com/camilevahviraki">Camile<a/></p>
 </footer>
