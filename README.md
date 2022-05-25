@@ -26,6 +26,13 @@ To get a local copy up and running follow these simple example steps.
 - go to the repository folder in your command prompt `Capstone-javascript`.
 - Open terminal in that folder and run `npm run start`.
 
+## Live link
+
+Type [type this link](https://camilevahviraki.github.io/Capstone-javascript/) to see the live demo
+
+## Video link
+
+Take a look on our [video of explaining](https://drive.google.com/file/d/1ivLEV4ah0aQQGOkLanM2d7MiiDBcuyp-/view) the project
 
 
 ## Authors
